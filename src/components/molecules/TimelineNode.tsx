@@ -87,8 +87,9 @@ export function TimelineNode({ event, index, isLast }: TimelineNodeProps) {
       <div className="flex-1 pb-2">
         <div className="flex items-center gap-3 mb-2">
           <span className="text-xs font-medium text-foreground-subtle uppercase tracking-wider">
-            {new Date(event.date + "-01").toLocaleDateString("en-US", {
+            {new Date(event.date + (event.date.split('-').length === 2 ? "-01" : "")).toLocaleDateString("en-US", {
               month: "short",
+              day: event.date.split('-').length === 3 ? "numeric" : undefined,
               year: "numeric",
             })}
           </span>

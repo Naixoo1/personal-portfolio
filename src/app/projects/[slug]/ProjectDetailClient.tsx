@@ -15,8 +15,9 @@ interface ProjectDetailClientProps {
 
 export function ProjectDetailClient({ project }: ProjectDetailClientProps) {
   const formatDate = (dateStr: string) =>
-    new Date(dateStr + "-01").toLocaleDateString("en-US", {
+    new Date(dateStr + (dateStr.split('-').length === 2 ? "-01" : "")).toLocaleDateString("en-US", {
       month: "short",
+      day: dateStr.split('-').length === 3 ? "numeric" : undefined,
       year: "numeric",
     });
 
