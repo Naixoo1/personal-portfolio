@@ -23,6 +23,7 @@ interface ButtonAsButton extends ButtonBaseProps {
 interface ButtonAsLink extends ButtonBaseProps {
   href: string;
   external?: boolean;
+  download?: string;
 }
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
@@ -72,13 +73,14 @@ export function Button(props: ButtonProps) {
 
   if ("href" in props && props.href) {
     const linkProps = props as ButtonAsLink;
-    if (linkProps.external) {
+    if (linkProps.external || linkProps.download) {
       return (
         <a
           href={linkProps.href}
           className={baseClasses}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={linkProps.external ? "_blank" : undefined}
+          rel={linkProps.external ? "noopener noreferrer" : undefined}
+          download={linkProps.download}
         >
           {icon}
           {children}

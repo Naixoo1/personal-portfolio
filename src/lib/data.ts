@@ -60,11 +60,12 @@ export const siteConfig = {
   initials: "AF",
   title: "Frontend & Backend Developer | AI Enthusiast",
   email: "vloxmmm@gmail.com",
-  location: "West Java, Indonesia",
+  schoolEmail: "alvaro.febryan@sma-yosuka.sch.id",
+  location: "West Karawang, West Java, Indonesia",
   timezone: "WIB (UTC+7)",
   available: true,
-  resumeUrl: "/resume.pdf",
-  bio: "Hi, I'm Alvaro. I am an 11th-grade high school student from Indonesia with a deep passion for full-stack web development, coding, data analysis, and computational problem-solving. I don't just build the user-facing frontend; I also work behind the scenes on backend development, leveraging AI as my second hand to optimize my workflow and build smarter applications. Alongside my studies, I serve as the chairperson of Sekbid 8 in my school's OSIS organization, leading initiatives centered on technology and English development.",
+  resumeUrl: "/Alvaro Febryan Angkawijaya_LinkedIn.pdf",
+  bio: "Hi, I'm Alvaro. I am an 11th-grade student at SMA Katolik Yos Sudarso from Indonesia with a deep passion for full-stack web development, coding, data analysis, and computational problem-solving. I don't just build the user-facing frontend; I also work behind the scenes on backend architecture, leveraging AI as my second hand to optimize my workflow and scale digital experiences. Alongside my studies, I serve as the chairperson/head of the technology and English development division (Sekbid 8) within my school's OSIS organization. In this role, I manage our public digital footprint on YouTube and Spotify, and handle the technical infrastructure and live streaming setups for major school events.",
   url: "https://varoo-web.vercel.app",
 };
 
@@ -78,23 +79,32 @@ export const socialLinks: SocialLink[] = [
 
 export const skills: Record<string, Skill[]> = {
   "Core Development": [
-    { name: "Frontend Development" },
-    { name: "Backend Development" },
-    { name: "Web Design" },
+    { name: "Full-Stack Development" },
+    { name: "Software Development" },
+    { name: "Web Architecture" },
   ],
   "Specialized Skills": [
     { name: "Data Analysis" },
     { name: "Computational Problem Solving" },
-    { name: "Mental Mathematics" },
+    { name: "Coding Experience" },
   ],
-  "Tools": [
+  "Tools & Methods": [
     { name: "AI-Assisted Development" },
-    { name: "Spreadsheet Architecture" },
+    { name: "Cloud Deployment" },
+  ],
+  "Languages": [
+    { name: "Indonesian (Native)" },
+    { name: "English (Professional Working)" },
+  ],
+  "Certifications": [
+    { name: "WordPress Website Training Program" },
+    { name: "What Is Generative AI?" },
+    { name: "Vibe Coding Study Jam (#JuaraVibeCoding)" },
   ],
 };
 
 export const globalMetrics: Metric[] = [
-  { value: "1", label: "OSIS Sekbid Chairperson" },
+  { value: "1", label: "OSIS Technology Division Head" },
   { value: "5", suffix: "+", label: "Full-Stack & Data Projects Developed" },
   { value: "3", label: "Academic Years Tracked via Custom Tools" },
   { value: "11", suffix: "th", label: "Grade Tech Innovator" },
@@ -103,6 +113,62 @@ export const globalMetrics: Metric[] = [
 // ===== PROJECT DATA =====
 
 export const projects: Project[] = [
+  {
+    slug: "cosmic-ops-astronomy-game",
+    title: "Cosmic Ops",
+    subtitle: "Standalone astronomy game application deployed on Cloud Run",
+    description: "Developed a standalone astronomy game application and deployed it seamlessly on Cloud Run for the Google Developers Vibe Coding event (#JuaraVibeCoding). Built with modern frontend elements, engaging mechanics, and automated container deployment.",
+    thumbnail: "/projects/cosmic-ops-thumb.jpg",
+    heroImage: "/projects/cosmic-ops-hero.jpg",
+    client: "Google Developers Vibe Coding Event",
+    role: "Full-Stack Developer",
+    startDate: "2026-06",
+    endDate: "2026-06",
+    status: "completed",
+    isFeatured: true,
+    tags: [
+      { name: "Software Development", category: "backend" },
+      { name: "Cloud Run", category: "devops" },
+      { name: "Game Logic", category: "frontend" },
+    ],
+    highlights: [
+      "Successfully built and deployed an interactive astronomy game",
+      "Containerized the app and deployed it on Google Cloud Run for scalability",
+      "Participated and presented at the Google Developers Vibe Coding event",
+    ],
+    metrics: [
+      { value: "100", suffix: "%", label: "Cloud Run Uptime" },
+      { value: "1", label: "Game Application" },
+      { value: "1", label: "Event Submission" },
+      { value: "0", suffix: " Downtime", label: "Container Lifecycle" },
+    ],
+    timeline: [
+      {
+        id: "c1",
+        title: "Game Architecture",
+        description: "Designed the interactive flow and astronomy question database for the game.",
+        date: "2026-06-01",
+        category: "milestone",
+        icon: "layout",
+      },
+      {
+        id: "c2",
+        title: "Containerization",
+        description: "Wrote the Dockerfile and configured container specifications for local testing.",
+        date: "2026-06-10",
+        category: "milestone",
+        icon: "database",
+      },
+      {
+        id: "c3",
+        title: "Cloud Run Deployment",
+        description: "Deployed the game on Google Cloud Run and validated production traffic during the event.",
+        date: "2026-06-15",
+        category: "outcome",
+        icon: "rocket",
+      },
+    ],
+  },
   {
     slug: "advanced-student-progress-tracker",
     title: "Advanced Student Progress Tracker",
@@ -212,62 +278,6 @@ export const projects: Project[] = [
         date: "2025-04",
         category: "outcome",
         icon: "rocket",
-      },
-    ],
-  },
-  {
-    slug: "ai-ethics-in-education",
-    title: "AI Ethics in Education",
-    subtitle: "Innovation concept paper prepared for the Youth Global Innovation Series",
-    description: "Drafted an innovation concept paper focusing on AI ethics in education, prepared as part of an essay application for the Youth Global Innovation Series. Explored the balance between AI tool utilization and academic integrity in modern secondary education.",
-    thumbnail: "/projects/ethics-thumb.jpg",
-    heroImage: "/projects/ethics-hero.jpg",
-    client: "Youth Global Innovation Series",
-    role: "Independent Researcher & Author",
-    startDate: "2025-05",
-    endDate: "2025-06",
-    status: "completed",
-    isFeatured: true,
-    tags: [
-      { name: "Research & Writing", category: "backend" },
-      { name: "AI Ethics", category: "ai-ml" },
-      { name: "Policy Proposal", category: "design" },
-    ],
-    highlights: [
-      "Researched student attitudes towards generative AI tools in high school education",
-      "Proposed a structured framework for responsible AI adoption in classroom settings",
-      "Drafted a comprehensive academic paper submitted to the global youth innovation panel",
-    ],
-    metrics: [
-      { value: "1", label: "Comprehensive Proposal" },
-      { value: "100", suffix: "%", label: "Independent Research" },
-      { value: "1", suffix: "st", label: "Paper Version Completed" },
-      { value: "12", suffix: " Pages", label: "Detailed Policy Frame" },
-    ],
-    timeline: [
-      {
-        id: "p1",
-        title: "Literature Review",
-        description: "Analyzed existing studies on AI integration in K-12 education, focusing on cognitive outcomes and ethics.",
-        date: "2025-05",
-        category: "milestone",
-        icon: "search",
-      },
-      {
-        id: "p2",
-        title: "Framework Drafting",
-        description: "Created the responsible adoption matrix for educators to define acceptable AI utilization boundaries.",
-        date: "2025-05",
-        category: "milestone",
-        icon: "brain",
-      },
-      {
-        id: "p3",
-        title: "Proposal Submission",
-        description: "Polished the final paper and concept deck for submission to the Youth Global Innovation Series.",
-        date: "2025-06",
-        category: "outcome",
-        icon: "check-circle",
       },
     ],
   },

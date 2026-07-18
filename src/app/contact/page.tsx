@@ -57,8 +57,28 @@ export default function ContactPage() {
                     justify-center group-hover:bg-accent/20 transition-colors">
                     <Mail className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-sm">{siteConfig.email}</span>
+                  <div className="flex flex-col">
+                    <span className="text-xs text-foreground-subtle">Personal Email</span>
+                    <span className="text-sm">{siteConfig.email}</span>
+                  </div>
                 </a>
+
+                {siteConfig.schoolEmail && (
+                  <a
+                    href={`mailto:${siteConfig.schoolEmail}`}
+                    className="flex items-center gap-3 text-foreground-muted hover:text-accent
+                      transition-colors group"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-accent-soft flex items-center
+                      justify-center group-hover:bg-accent/20 transition-colors">
+                      <Mail className="w-4 h-4 text-accent" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-xs text-foreground-subtle">School Email</span>
+                      <span className="text-sm">{siteConfig.schoolEmail}</span>
+                    </div>
+                  </a>
+                )}
 
                 {socialLinks.map((link) => {
                   const Icon = iconMap[link.icon] || Mail;
@@ -92,7 +112,8 @@ export default function ContactPage() {
                 })}
 
                 <a
-                  href="/resume.pdf"
+                  href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+                  download="Alvaro_Febryan_Resume.pdf"
                   className="flex items-center gap-3 text-foreground-muted hover:text-accent
                     transition-colors group"
                 >

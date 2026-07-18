@@ -68,7 +68,8 @@ export function AboutClient({ config, skills, metrics }: AboutClientProps) {
                 Start a Brief
               </Button>
               <Button
-                href="/resume.pdf"
+                href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+                download="Alvaro_Febryan_Resume.pdf"
                 variant="secondary"
                 size="lg"
                 icon={<Download className="w-5 h-5" />}

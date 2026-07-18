@@ -130,14 +130,15 @@ export function Navbar() {
                 transition={{ delay: 0.5 }}
                 className="mt-4"
               >
-                <Link
-                  href="/resume.pdf"
+                <a
+                  href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+                  download="Alvaro_Febryan_Resume.pdf"
                   className="px-6 py-3 rounded-full bg-accent text-white font-medium
                     hover:bg-accent-hover transition-colors"
                   onClick={closeMobile}
                 >
                   Download Resume
-                </Link>
+                </a>
               </motion.div>
             </motion.nav>
           </motion.div>
