@@ -2,7 +2,7 @@ import { Hero } from "@/components/organisms/Hero";
 import { ProjectGrid } from "@/components/organisms/ProjectGrid";
 import { SkillsShowcase } from "@/components/organisms/SkillsShowcase";
 import { MetricsBar } from "@/components/organisms/MetricsBar";
-import { getFeaturedProjects, siteConfig } from "@/lib/data";
+import { getFeaturedProjects, siteConfig, socialLinks } from "@/lib/data";
 import { Button } from "@/components/atoms/Button";
 import { ArrowRight } from "lucide-react";
 
@@ -22,18 +22,14 @@ export default function Home() {
             "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            url: "https://alvarofebryan.dev",
-            sameAs: [
-              "https://github.com",
-              "https://linkedin.com",
-              "https://twitter.com",
-            ],
+            url: siteConfig.url,
+            sameAs: socialLinks.map((link) => link.url),
             knowsAbout: [
-              "React",
-              "Next.js",
-              "Python",
-              "TensorFlow",
-              "System Design",
+              "Frontend Development",
+              "Backend Development",
+              "Web Design",
+              "Data Analysis",
+              "AI-Assisted Development",
             ],
           }),
         }}
@@ -49,12 +45,11 @@ export default function Home() {
       <section className="py-24 md:py-32 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            Your next system deserves{" "}
-            <span className="gradient-text">precision</span>.
+            Let&apos;s build something{" "}
+            <span className="gradient-text">amazing</span> together.
           </h2>
           <p className="text-lg text-foreground-muted max-w-xl mx-auto">
-            I partner with teams that refuse to compromise on quality.
-            Let&apos;s discuss your requirements.
+            I am always open to new challenges, design competitions, and collaborative development projects.
           </p>
           <div className="pt-4">
             <Button
@@ -63,7 +58,7 @@ export default function Home() {
               size="lg"
               icon={<ArrowRight className="w-5 h-5" />}
             >
-              Start a Brief
+              Get in touch
             </Button>
           </div>
         </div>

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/organisms/ContactForm";
 import { siteConfig, socialLinks } from "@/lib/data";
-import { Mail, MapPin, Clock, Globe, ExternalLink, FileText } from "lucide-react";
+import { Mail, MapPin, Clock, Code, Briefcase, Camera, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Share your technical requirements. I'll respond within 24 hours with an initial assessment.",
+    "Share your project ideas, hackathon invitations, or design competition details.",
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  github: Globe,
-  linkedin: ExternalLink,
-  twitter: Globe,
+  github: Code,
+  linkedin: Briefcase,
+  instagram: Camera,
 };
 
 export default function ContactPage() {
@@ -22,12 +22,11 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            Let&apos;s scope{" "}
-            <span className="gradient-text">your project</span>.
+            Let&apos;s build{" "}
+            <span className="gradient-text">together</span>.
           </h1>
           <p className="text-lg text-foreground-muted max-w-xl mx-auto">
-            Share your technical requirements. I&apos;ll respond within 24 hours
-            with an initial assessment.
+            Share your project ideas, hackathon invites, or collaboration details.
           </p>
         </div>
 
@@ -83,7 +82,9 @@ export default function ContactPage() {
                             ? "Explore open-source work"
                             : link.name === "LinkedIn"
                               ? "View professional profile"
-                              : "Follow updates"}
+                              : link.name === "Instagram"
+                                ? "Follow creative updates"
+                                : "Follow updates"}
                         </span>
                       </div>
                     </a>

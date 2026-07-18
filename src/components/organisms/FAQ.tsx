@@ -11,24 +11,24 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Alvaro's core technical specialization?",
-    answer: "Full-stack systems architecture with deep specialization in AI/ML integration, real-time data pipelines, and high-availability distributed systems. I operate across the entire stack — from infrastructure provisioning to pixel-level frontend polish."
+    question: "What is Alvaro's core technical focus?",
+    answer: "I specialize in frontend and backend web development, coding, and data analysis. I also enjoy leveraging AI tools as a 'second hand' to optimize my workflow and build smarter applications."
   },
   {
-    question: "Does Alvaro work independently or with teams?",
-    answer: "Both. I've led cross-functional teams of up to 12 engineers and also operate as a high-output individual contributor. My approach adapts to whatever structure delivers the best outcome for the project."
+    question: "Does Alvaro work independently or in teams?",
+    answer: "Both. I regularly collaborate on group projects and coordinate school initiatives as the chairperson of Sekbid 8 in OSIS. I also enjoy building independent full-stack web applications and spreadsheet architectures."
   },
   {
-    question: "What industries has Alvaro delivered production systems for?",
-    answer: "Enterprise analytics (fintech), healthcare (HIPAA-compliant AI), and payments infrastructure ($50M+/month processing). Each engagement required navigating domain-specific compliance and regulatory constraints."
+    question: "What kinds of projects has Alvaro developed?",
+    answer: "I have designed an Advanced Student Progress Tracker spreadsheet for guidance counselors, coordinated the event scheduling framework for 'Archidelle' (a major school festival), and written policy proposals for AI ethics in education."
   },
   {
-    question: "What is Alvaro's availability and engagement model?",
-    answer: "Currently accepting new engagements. I typically work on 3–6 month contracts with the option to extend. I'm based in San Francisco (PST) and work with distributed teams globally."
+    question: "What is Alvaro's location, timezone, and availability?",
+    answer: "I am based in West Java, Indonesia (WIB, UTC+7). I'm currently looking to participate in web design competitions, hackathons, and collaborative full-stack projects."
   },
   {
-    question: "How quickly can Alvaro ramp up on a new codebase or domain?",
-    answer: "Typically productive within the first week. I prioritize understanding existing architecture patterns before introducing changes. My onboarding process includes a systematic architecture review, dependency audit, and stakeholder alignment."
+    question: "How does Alvaro approach computational problem solving?",
+    answer: "I focus on mental mathematics, spreadsheet data modeling, and algorithmic problem-solving. I am passionate about finding logical and clean ways to organize data and solve academic and real-world challenges."
   }
 ];
 
@@ -45,10 +45,10 @@ export function FAQ() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Recruiter Quick Facts
+            Developer Quick Facts
           </h2>
           <p className="text-foreground-muted text-lg max-w-xl mx-auto">
-            High-intent questions frequently asked by technical IT/AI recruiters
+            Frequently asked questions about my background, availability, and projects
           </p>
         </div>
 

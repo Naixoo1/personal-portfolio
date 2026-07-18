@@ -47,7 +47,7 @@ export function Hero() {
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full
             bg-success/10 border border-success/20 text-success text-sm font-medium">
             <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-            Open to new engagements
+            Open to competitions, hackathons & projects
           </span>
         </motion.div>
 
@@ -57,8 +57,8 @@ export function Hero() {
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold
             tracking-tight leading-[1.1] mb-6"
         >
-          <span className="block text-foreground">Engineering precision.</span>
-          <span className="block gradient-text">Delivered at scale.</span>
+          <span className="block text-foreground">Frontend & Backend</span>
+          <span className="block gradient-text">Developer & AI Enthusiast</span>
         </motion.h1>
 
         {/* H2 — Subheadline (15 words) */}
@@ -67,8 +67,8 @@ export function Hero() {
           className="text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto
             leading-relaxed mb-10"
         >
-          Full-stack architect and AI engineer transforming complex technical
-          challenges into production-grade systems.
+          Hi, I&apos;m Alvaro. An 11th-grade student from Indonesia with a passion for
+          building full-stack web applications and leveraging AI to optimize workflows.
         </motion.p>
 
         {/* CTAs */}

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Globe, ExternalLink, Mail, ArrowUpRight } from "lucide-react";
+import { Code, Briefcase, Camera, Mail, ArrowUpRight } from "lucide-react";
 import { siteConfig, socialLinks } from "@/lib/data";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  github: Globe,
-  linkedin: ExternalLink,
-  twitter: Globe,
+  github: Code,
+  linkedin: Briefcase,
+  instagram: Camera,
 };
 
 export function Footer() {
@@ -118,7 +118,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-xs text-foreground-subtle text-center sm:text-left">
-            All project metrics represent verified production data from client engagements.
+            All project metrics represent tracked educational and development data.
           </p>
         </div>
       </div>

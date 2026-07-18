@@ -90,21 +90,10 @@ export function AboutClient({ config, skills, metrics }: AboutClientProps) {
             className="rounded-2xl border border-surface-border bg-surface p-8 md:p-12"
           >
             <h2 className="text-2xl font-bold text-foreground mb-6">
-              Engineering Philosophy
+              About Me
             </h2>
             <div className="space-y-4 text-foreground-muted leading-relaxed text-lg">
               <p>{config.bio}</p>
-              <p>
-                I specialize in bridging the gap between cutting-edge research
-                and production-grade systems. Every architecture I design is
-                optimized not just for performance — but for measurable business
-                outcomes.
-              </p>
-              <p>
-                Beyond client work, I contribute to open-source infrastructure,
-                speak at engineering conferences, and mentor early-career
-                developers in systems design.
-              </p>
             </div>
           </motion.div>
         </div>
@@ -141,7 +130,7 @@ export function AboutClient({ config, skills, metrics }: AboutClientProps) {
               Technical Proficiency
             </h2>
             <p className="text-foreground-muted text-lg">
-              Production-tested capabilities across the modern stack
+              Core capabilities and tools across development and analysis
             </p>
           </motion.div>
 
@@ -182,11 +171,10 @@ export function AboutClient({ config, skills, metrics }: AboutClientProps) {
       <section className="px-6 py-24">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Ready to evaluate the fit?
+            Let&apos;s collaborate on your next project
           </h2>
           <p className="text-lg text-foreground-muted max-w-xl mx-auto">
-            I work best with teams that value technical rigor and clear
-            communication.
+            I am always open to learning opportunities, competitions, hackathons, and collaborative projects.
           </p>
           <Button
             href="/contact"

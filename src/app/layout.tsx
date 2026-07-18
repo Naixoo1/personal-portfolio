@@ -46,35 +46,36 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Alvaro Febryan Angkawijaya — Senior Full-Stack & AI Engineer",
-    template: "%s | Alvaro Febryan",
+    default: "Alvaro Febryan Angkawijaya — Frontend & Backend Developer | AI Enthusiast",
+    template: "%s | Alvaro",
   },
   description:
-    "Senior Full-Stack & AI Engineer building intelligent systems that scale. 7+ years of production experience across fintech, healthtech, and AI.",
+    "Frontend & Backend Developer and AI Enthusiast based in Indonesia. High school student passionate about full-stack web development, coding, data analysis, and computational problem-solving.",
   keywords: [
     "Alvaro Febryan Angkawijaya",
-    "Full-Stack Engineer",
-    "AI Engineer",
+    "Frontend Developer",
+    "Backend Developer",
+    "AI Enthusiast",
     "React",
     "Next.js",
-    "Python",
-    "TensorFlow",
+    "Spreadsheet Architecture",
+    "Indonesia Developer",
     "Portfolio",
   ],
   authors: [{ name: "Alvaro Febryan Angkawijaya" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Alvaro Febryan — Portfolio",
-    title: "Alvaro Febryan Angkawijaya — Senior Full-Stack & AI Engineer",
+    siteName: "Alvaro — Portfolio",
+    title: "Alvaro Febryan Angkawijaya — Frontend & Backend Developer",
     description:
-      "Building intelligent systems that scale. View case studies and get in touch.",
+      "Frontend & Backend Developer and AI Enthusiast based in Indonesia. View projects and get in touch.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alvaro Febryan Angkawijaya — Senior Full-Stack & AI Engineer",
+    title: "Alvaro Febryan Angkawijaya — Frontend & Backend Developer",
     description:
-      "Building intelligent systems that scale. View case studies and get in touch.",
+      "Frontend & Backend Developer and AI Enthusiast based in Indonesia. View projects and get in touch.",
   },
   robots: {
     index: true,
