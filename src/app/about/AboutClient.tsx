@@ -67,15 +67,14 @@ export function AboutClient({ config, skills, metrics }: AboutClientProps) {
               >
                 Start a Brief
               </Button>
-              <Button
-                href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+              <a
+                href="/resume.pdf"
                 download="Alvaro_Febryan_Resume.pdf"
-                variant="secondary"
-                size="lg"
-                icon={<Download className="w-5 h-5" />}
+                className="inline-flex items-center justify-center font-medium rounded-full transition-all duration-200 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background h-13 px-8 text-lg gap-2.5 bg-transparent border border-surface-border text-foreground hover:bg-surface-hover hover:border-accent/30 active:scale-[0.97]"
               >
+                <Download className="w-5 h-5" />
                 Download Resume
-              </Button>
+              </a>
             </motion.div>
           </motion.div>
         </div>

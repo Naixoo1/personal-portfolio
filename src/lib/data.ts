@@ -64,7 +64,7 @@ export const siteConfig = {
   location: "West Karawang, West Java, Indonesia",
   timezone: "WIB (UTC+7)",
   available: true,
-  resumeUrl: "/Alvaro Febryan Angkawijaya_LinkedIn.pdf",
+  resumeUrl: "/resume.pdf",
   bio: "Hi, I'm Alvaro. I am an 11th-grade student at SMA Katolik Yos Sudarso from Indonesia with a deep passion for full-stack web development, coding, data analysis, and computational problem-solving. I don't just build the user-facing frontend; I also work behind the scenes on backend architecture, leveraging AI as my second hand to optimize my workflow and scale digital experiences. Alongside my studies, I serve as the chairperson/head of the technology and English development division (Sekbid 8) within my school's OSIS organization. In this role, I manage our public digital footprint on YouTube and Spotify, and handle the technical infrastructure and live streaming setups for major school events.",
   url: "https://varoo-web.vercel.app",
 };

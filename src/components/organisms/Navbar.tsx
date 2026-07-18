@@ -131,7 +131,7 @@ export function Navbar() {
                 className="mt-4"
               >
                 <a
-                  href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+                  href="/resume.pdf"
                   download="Alvaro_Febryan_Resume.pdf"
                   className="px-6 py-3 rounded-full bg-accent text-white font-medium
                     hover:bg-accent-hover transition-colors"

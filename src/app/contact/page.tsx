@@ -112,7 +112,7 @@ export default function ContactPage() {
                 })}
 
                 <a
-                  href="/Alvaro Febryan Angkawijaya_LinkedIn.pdf"
+                  href="/resume.pdf"
                   download="Alvaro_Febryan_Resume.pdf"
                   className="flex items-center gap-3 text-foreground-muted hover:text-accent
                     transition-colors group"
